@@ -1,0 +1,39 @@
+/*gallery*/
+.gall-header {
+    text-align: center;
+  }
+  .gallery7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 40px;
+    padding-top: 2rem;
+  }
+  .content {
+    padding-bottom: 4rem;
+    height: auto;
+  }
+  .lila :hover {
+    box-shadow: 0 0 50px #9e7382;
+  }
+  .lila {
+    border: 1px #611c35;
+    padding: 0 0 20px;
+    margin: auto;
+    max-width: 90%;
+  }
+  img[data-src] {
+    filter: blur(0.2em);
+  }
+  img {
+    filter: blur(0em);
+    transition: filter 1.5s;
+    max-width: 100%;
+  }
+  .raft {
+    width: 400px;
+    height: 300px;
+  }
+  .storm {
+    text-align: center;
+  }
