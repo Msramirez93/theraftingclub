@@ -29,7 +29,7 @@ body {
   #content {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f7fff7;
+    background-color: transparent;
     padding: 1em;
   }
   h2 {
@@ -306,11 +306,11 @@ body {
     background-position: center;
   }
   
-  #content {
+  /*#content {
     max-width: 1080px;
     padding-top: 20px;
     margin: auto;
-  }
+  }*/
   .banner div {
     padding: 20px 2rem;
   }
