@@ -344,7 +344,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url("../media/bannerhero.jpg");
+  background-image: url("../mediapro/bannerhero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -542,14 +542,6 @@ p {
   padding: 3px;
 }
 
-/*gallery*/
-/*.gallery {
-  text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  margin: 30px auto;
-}*/
 .containerGal {
   display: block;
   margin-bottom: 60px;

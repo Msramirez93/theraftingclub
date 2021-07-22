@@ -702,7 +702,7 @@ a:hover {
   flex-direction: row;
   align-items: center;
 
-  background-image: url("../media/bannerhero.jpg");
+  background-image: url("../mediapro/bannerhero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
