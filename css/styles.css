@@ -56,7 +56,7 @@ nav ul li a {
   text-decoration: none;
   color: black;
   border-top: 1px solid rgb(0, 0, 0, 0.3);
-  padding: 10px;
+  padding: 30px;
 }
 
 nav ul li.active a {
@@ -80,7 +80,7 @@ nav ul.hide {
 
 ul li a {
   font-family: 'Merriweather', serif;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 #content {
   max-width: 1200px;
@@ -102,7 +102,7 @@ nav a {
   text-decoration: none;
 }
 main {
-  background-color: #eefbc6;
+  background-color: #f8fff4;
 }
 .paragraph-1{
   text-align: center;
@@ -281,16 +281,7 @@ h2 {
 }
 
 @media only screen and (min-width: 769px) {
-  /*.home-grid,
-  nav ul,
-  .banner-box {
-    display: block;
-  }
-  ul li {
-    display: inline-block;
-    font-size: 35px;
-    word-spacing: 15px;
-  }*/
+  
   nav button {
     display: none;
 }
@@ -311,14 +302,17 @@ nav ul li a {
 nav ul.hide {
     display: block;
 }
-  .home-right-img,
+  .home-right-img{
+       height: 200px;
+       width: 200px;
+  }
   .home-left-img {
     height: 220px;
-    width: 168px;
+    width: 200px;
   }
   .mapa {
     width: 400px;
-    height: 450px;
+    height: 300px;
     margin-left: 100px;
   }
   .action-righ {
@@ -369,13 +363,6 @@ nav ul.hide {
 .src {
     display: flex;
 }
-  /*.gallery7 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    grid-column-gap: 15px;
-    grid-row-gap: 50px;
-  }*/
   /*Faq*/
   .contenedor{
     max-width: 800px;
@@ -414,8 +401,6 @@ nav ul.hide {
   .mapa {
     width: 600px;
     height: 400px;
-    /*align-self:center; 
-    justify-self:center;*/
     margin-left: 200px;
     border: 2px solid #121212;
   }
