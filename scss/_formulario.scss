@@ -7,6 +7,44 @@
   }
   form fieldset {
     margin: auto;
+    border: 8px solid black;
+    padding: 1rem 1.5%;
+    background-color: transparent;
+  }
+  
+  form legend {
+    color: #1b1a1a;
+    font-size: 20px;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 0.5rem 0rem;
+  }
+  form label.first {
+    display: block;
+    padding-top: 1rem;
+    color: #251e1e;
+    font-size: 15px;
+  }
+  form label.first input {
+    display: block;
+    width: 90%;
+    padding: 5px 5px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  .buttonForm{
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (min-width: 1025px){ 
+  .formulario {
+    align-items: center;
+    justify-content: center;
+  }
+  .storm1 {
+    font-size: 25px;
+  }
+  form fieldset {
+    margin: auto;
     border: 8px solid #d4b2d8;
     padding: 1rem 1.5%;
     background-color: #a88fac;
@@ -30,4 +68,19 @@
     padding: 5px 5px;
     margin: 10px;
     box-sizing: border-box;
+  }
+  .textarea {
+    display: block;
+    margin: 1rem 0.5rem 1rem;
+    width: 90%;
+  } 
+    
+  }
+  @media only screen and (min-width: 769px) {
+  
+
+
+
+
+
   }

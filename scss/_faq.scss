@@ -1,36 +1,4 @@
 /*FAQ*/
-body {
-  background-color: #B721FF;
-  background-image: linear-gradient(128deg, #B721FF 49%, #21D4FD 82%, #ffffff 100%);
-  font-family: 'Merriweather', serif;
-}
-ul li a{
-  font-size: 1.5rem;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-
-}
-
-h1 {
-  text-align: center;
-  font-size: 3rem;
-}
-
-h3 {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.contenedor {
-  max-width: 1100px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .tarjeta {
   background-color: #A69CAC;
   border-radius: 15px;
@@ -40,7 +8,6 @@ h3 {
   position: relative;
   margin-bottom: 50px;
 }
-
 .tarjeta__img {
   width: 300px;
   height: 180px;
@@ -54,26 +21,9 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-
 .tarjeta__parrafo {
   line-height: 28px;
   font-size: 1rem;
-}
-
-.boton {
-  height: 60px;
-  padding: 20px;
-  background-color: #191d32;
-  color: #e1faf9;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-&.boton--derecha {
-  position: absolute;
-  right: 20px;
-  bottom: -25px;
-  cursor: pointer;
-}
 }
 .article {
   padding: 20px;
@@ -89,7 +39,7 @@ h3 {
   margin: 0 auto;
 &.HAna:hover{
   border: 2px solid #191d32;
-  cursor: pointer;
+
 }
 }
 .city_pic2{
@@ -100,10 +50,49 @@ h3 {
   margin: 0 auto;
 &.city_pic2:hover{
   border: 2px solid #191d32;
-  cursor: pointer;
+ 
 }
 }
 .text_2 {
   margin-top: 0;
   padding: 0 23px 17px 24px;
 }
+@media only screen and (min-width: 769px) {
+   /*Faq*/
+   .contenedor{
+    max-width: 800px;
+    margin: auto;
+    width: 45%;
+  }
+  .HAna {
+    max-width: 550px;
+}
+.text_2 {
+  font-size: 18px;
+  padding-left: 0;
+}
+.city_pic2 {
+  float: left;
+  padding-left: 0;
+  width: 320px;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+  .article {
+    width: 900px;
+    margin: auto;
+  }
+  
+  .HAna {
+    float: right;
+    width: 50%;
+    margin: 10px 20px;
+    padding: 0;
+    
+  }
+  .text_2 {
+    font-size: 22px;
+  }
+  
+  }

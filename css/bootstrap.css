@@ -113,7 +113,11 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
-
+li{
+  height: 10px;
+  width: 10px;
+  border-radius: 6px;
+}
 dt {
   font-weight: 700;
 }
