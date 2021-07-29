@@ -6,7 +6,7 @@
 
 body {
   font-family: "Merriweather", serif;
-  background-image: url(/mediapro/fondodelsitiogeneral.jpg);
+  background-image: url(../mediapro/fondodelsitiogeneral.jpg);
   color: #121212;
   font-size: 1.2rem;
 }
@@ -18,14 +18,9 @@ nav .botonera {
   padding: 0;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
-  font-size: 3rem;
-}
-
-h3 {
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 ol li {
@@ -96,15 +91,12 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-image: url("../mediapro/bannerhero.jpg");
+  background-image: url("../mediapro/bearlake (1).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-/*.contact_info {
-  width: 900px;
-}*/
 .contact {
   font-size: 1.5rem;
 }
@@ -139,6 +131,11 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 769px) {
+  .btn-12 span {
+    margin: 0px 10px;
+  }
+}
 /*body {
     /*background-color: #0a0421;
     background-color: #B721FF;
@@ -565,7 +562,7 @@ form label.first input {
     margin: auto;
     border: 8px solid #d4b2d8;
     padding: 1rem 1.5%;
-    background-color: #a88fac;
+    background-color: transparent;
   }
 
   form legend {
@@ -728,11 +725,17 @@ form label.first input {
 .tarjeta__titulo {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  background-color: aliceblue;
+  text-align: center;
 }
 
 .tarjeta__parrafo {
   line-height: 28px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding: 15px 12px;
+  background-color: skyblue;
+  text-align: center;
+  margin: -174px -12px 3px 262px;
 }
 
 .article {
@@ -765,18 +768,13 @@ form label.first input {
 }
 
 .text_2 {
+  font-size: 0.5rem;
   margin-top: 0;
   padding: 0 23px 17px 24px;
 }
 
 @media only screen and (min-width: 769px) {
   /*Faq*/
-  .contenedor {
-    max-width: 800px;
-    margin: auto;
-    width: 45%;
-  }
-
   .HAna {
     max-width: 550px;
   }
@@ -787,7 +785,6 @@ form label.first input {
   }
 
   .city_pic2 {
-    float: left;
     padding-left: 0;
     width: 320px;
   }
@@ -799,7 +796,6 @@ form label.first input {
   }
 
   .HAna {
-    float: right;
     width: 50%;
     margin: 10px 20px;
     padding: 0;

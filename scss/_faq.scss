@@ -20,10 +20,16 @@
 .tarjeta__titulo {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  background-color: aliceblue;
+  text-align: center;
 }
 .tarjeta__parrafo {
-  line-height: 28px;
-  font-size: 1rem;
+    line-height: 28px;
+    font-size: 1.5rem;
+    padding: 15px 12px;
+    background-color: skyblue;
+    text-align: center;
+    margin: -174px -12px 3px 262px;
 }
 .article {
   padding: 20px;
@@ -54,16 +60,13 @@
 }
 }
 .text_2 {
+  font-size: .5rem;
   margin-top: 0;
   padding: 0 23px 17px 24px;
 }
 @media only screen and (min-width: 769px) {
    /*Faq*/
-   .contenedor{
-    max-width: 800px;
-    margin: auto;
-    width: 45%;
-  }
+ 
   .HAna {
     max-width: 550px;
 }
@@ -72,7 +75,7 @@
   padding-left: 0;
 }
 .city_pic2 {
-  float: left;
+  
   padding-left: 0;
   width: 320px;
 }
@@ -85,7 +88,6 @@
   }
   
   .HAna {
-    float: right;
     width: 50%;
     margin: 10px 20px;
     padding: 0;
