@@ -1,9 +1,13 @@
+@import "variables";
+
 .logoSite{
   height: 100px;
   }
 body{
-  font-family:'Merriweather', serif;
+  font-family: $fuente;
+  background-color: #161B33;
   background-image: url(../mediapro/fondodelsitiogeneral.jpg);
+  height: 100%;
   color:#121212;
   font-size: 1.2rem;
 }
@@ -12,6 +16,7 @@ body{
   font-size: 20px;
   margin: 10px 10px 10px;
   padding: 0;
+  word-spacing: 20px;
 }
 h1 , h2 ,h3 {
   text-align: center;
@@ -23,8 +28,8 @@ ol li{
   border-radius: 20px;
 }
 p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 200;
+  font-family:$fuentedos ;
+  font-size: 1rem;
 }
 .btn-12{
   color:#121212;
@@ -51,8 +56,8 @@ p{
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   border-radius: 5px;
-  margin: 0px 122px;
-  /*margin:0px 500px;*/
+   /*margin: 0px 122px;*/
+  margin:0px 500px;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -61,11 +66,12 @@ p{
   transition: all .3s;
 }
 .btn-12 span:nth-child(1) {
+  margin:0px 510px;
   box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+  -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg);
@@ -74,6 +80,7 @@ p{
   transform-origin: 50% 50% -20px;
 }
 .btn-12 span:nth-child(2) {
+  margin:0px 510px;
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
@@ -121,7 +128,8 @@ p{
   max-width: 500px;
 }
 .container{
-  padding: 41px 25px;
+  padding: 24px 0px;
+  margin: -9px 0px 0px 8px;
 }
 footer{
   background-color: #121212;
@@ -131,15 +139,25 @@ footer{
   padding: 20px 20px;
 }
 .mediared1{
-  width: 40px;
+  width: 35px;
 }
 a{
    text-decoration: none;
+   color:white;
 }
-@media only screen and (min-width: 769px) {
+.targetaRecibe{
+  padding: 10px 10px;
+  margin: 30px 20px;
+}
+.number{
+  margin: 30px;
+}
+@media only screen and (max-width: 769px) {
 
-  .btn-12 span {
-    margin: 0px 10px ;
+  .btn-12 span,
+  .btn-12 span:nth-child(1) ,
+  .btn-12 span:nth-child(2) {
+    margin: 0px 315px;
   }
 }
 
@@ -181,360 +199,3 @@ a{
 
 
 
-/*body {
-    /*background-color: #0a0421;
-    background-color: #B721FF;
-    background-image: linear-gradient(128deg, #B721FF 49%, #21D4FD 82%, #ffffff 100%);
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #000000;
-    background-color: #ced3dc;
-    font-family: 'Merriweather', serif;
-    line-height: 2em;
-    margin: 2em 0em 0em 0em;
-    padding-left: 1.5em;
-  }
-  p {
-    font-family: 'Merriweather', serif;
-    line-height: normal;
-    margin: 0.5em 0em 2em 0em;
-    font-size: 1.2rem;
-  }
-  ul li a {
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-  }
-  #content {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: transparent;
-    padding: 1em;
-  }
-  h2 {
-    background: #ced3dc;
-  }
-  nav a {
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
-    line-height: 0;
-    text-decoration: none;
-  }
-  main {
-    background-color: #f8fff4;
-  }
-  .paragraph-1{
-    text-align: center;
-  }
-  .paragraph-1 span{
-    align-items: center;
-  }
-  .logo-box {
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    padding: 0.5em;
-    border: 1px solid #000;
-  }
-  .logo-box img {
-    border-radius: 30px 30px 0px 0px;
-  }
-  
-  .banner-box img {
-    width: 100%;
-  
-    grid-column: 1/3;
-    grid-row: 1;
-  }
-  .home-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1em;
-  }
-  header {
-    display: grid;
-    grid-template-columns: 180px auto;
-    background-color: #ced3dc;
-    align-items: center;
-  }
-  nav ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    margin: 0;
-  }
-  nav a:hover {
-    background-color: #13273e;
-    color: #000000;
-  }
-  nav {
-    margin-left: 40px;
-  }
-  .active {
-    background-color: #FF9241;
-  }
-  footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    background-color: black;
-    margin: 0;
-    color: white;
-    align-items: center;
-    grid-column-gap: 40px;
-  }
-  footer p {
-    padding-left: 20px;
-    margin-top: 30px;
-    font-size: 20px;
-  }
-  footer a {
-    text-decoration: none;
-  }
-  .social {
-    margin-left: 10px;
-    padding: 0px 0px 0px 0px;
-    width: 100%;
-  }
-  .action {
-    background-color: rgba(240, 240, 240, 0.8);
-    margin: 1em 3em;
-    padding: 1em;
-    text-align: center;
-    border: 1px solid #ccc;
-  
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .action span {
-    line-height: 2em;
-    width: 10em;
-    background-color: #9eefe5;
-    font-size: 1.2em;
-    border: 2px solid #000;
-  }
-  
-  .banner-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  button:hover {
-    background-color: #13273e;
-    color: #000;
-    font-family: 'Merriweather', serif;
-  }
-  
-  h2 {
-    border-top: 5px double;
-    border-bottom: 5px double;
-    padding: 0.3em;
-  }
-  .mapa {
-    box-shadow: 0 0 50px #4e8098;
-    border: 1px solid black;
-  }
-  .con {
-    text-align: center;
-    word-spacing: 5px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-  .number {
-    color: #000;
-    font-size: 20px;
-  }
-  /*index formularios de contacto
-.bgColorBlack {
-    background-color: #ced3dc;
-  }
-  
-  #header {
-    min-height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  #header .logo {
-    margin-left: 20px;
-  }
-  #header ul {
-    list-style: none;
-  }
-  #header li {
-    display: inline-block;
-    padding: 0 10px;
-  }
-  #header li a {
-    color: #000;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 20px;
-    padding-top: 18px;
-  }
-  a:hover {
-    background-color: #13273e;
-  }
-  .botonera {
-    margin-left: 20px;
-    padding-top: 20px;
-    font-size: 1rem;
-  }
-  .typeR {
-    font-family: 'Merriweather', serif;
-    font-weight: 400;
-    
-  }
-  .button {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5em 0.75em;
-    border: 2px solid black;
-  }
-  .mar-right {
-    margin-right: 20px;
-  }
-  .bgColorYellow {
-    background: rgb(0, 172, 238);
-    background: linear-gradient(
-      0deg,
-      rgba(0, 172, 238, 1) 0%,
-      rgba(2, 126, 251, 1) 100%
-    );
-    width: 130px;
-    height: 40px;
-    line-height: 42px;
-    padding: 0;
-    border: none;
-  }
-  .bgColorYellow span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-  }
-  .bgColorYellow:after .bgColorYellow:before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    background: rgba(2, 126, 251, 1);
-    transition: all 0.3s ease;
-  }
-  .bgColorYellow:before {
-    height: 0%;
-    width: 2px;
-  }
-  .bgColorYellow:after {
-    width: 0%;
-    height: 2px;
-  }
-  .bgColorYellow:hover {
-    background: transparent;
-    box-shadow: none;
-  }
-  .bgColorYellow:hover:before {
-    height: 100%;
-  }
-  .bgColorYellow:hover:after {
-    width: 100%;
-  }
-  .bgColorYellow span:hover {
-    color: rgba(2, 126, 251, 1);
-  }
-  .bgColorYellow span :before,
-  .bgColorYellow span :after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background: rgba(2, 126, 251, 1);
-    transition: all 0.3s ease;
-  }
-  .bgColorYellow span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .bgColorYellow span:after {
-    width: 0%;
-    height: 2px;
-  }
-  .bgColorYellow span:hover:before {
-    height: 100%;
-  }
-  .bgColorYellow span:hover:after {
-    width: 100%;
-  }
-  
-  .colorBlack {
-    color: #121212;
-  }
-  .banner {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  
-    background-image: url("../mediapro/bannerhero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /*#content {
-    max-width: 1080px;
-    padding-top: 20px;
-    margin: auto;
-  }
-  .banner div {
-    padding: 20px 2rem;
-  }
-  .typeR .bold {
-    font-weight: 700;
-  }
-  .banner h3,
-  .banner p {
-    color: #000;
-    font-weight: bold;
-  }
-  .banner h3 {
-    font-size: 23px;
-    margin-bottom: 0.5rem;
-  }
-  .banner p {
-    font-size: 18px;
-    margin-bottom: 1rem;
-  }
-  .mediared {
-    height: 40px;
-   align-items: center;
-  }
-  .email-whatsapp {
-    text-align: center;
-  }
-  footer {
-    background-color: #121212;
-    color: white;
-    font-size: 20px;
-  }
-  form {
-    align-self: center;
-    min-height: 200px;
-    margin: 100px 100px;
-    padding-right: 100px 100px;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  #contanc {
-    align-items: center;
-  }*/
- 

@@ -1,11 +1,29 @@
 .home-headline-1{
   padding: 20px 20px;
   text-align: center;
-  &.home-pragraph-3{
-    font-size: 1.5em;
+}
+  .home-pragraph-3{
+    font-size: 1rem;
+    margin: 20px 50px;
+    }
+.home-paragraph-1 {
+  margin:40px;
+  &.home-paragraph-2{
+    font-size: 1em;
+    text-align: center;
   }
 }
 .paragraph-1{
   text-align: center;
   padding: 20px 20px;
+}
+.contai-grid{
+  display:grid;
+  grid-template-areas:"home-paragraph-1"
+                      "home-right-img"
+                      "home-left-img"
+                      "home-paragraph-2";
+}
+.home-left-img{
+ width: 300px;
 }

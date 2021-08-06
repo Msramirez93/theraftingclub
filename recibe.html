@@ -10,95 +10,97 @@
   <meta name="keywords"  content="IMAGENES, SITIO, DEPORTE, RAFTING,ACTIVIDAD REACREATIVA,ACTIVIDAD FAMILIAR,INFORMACION DE CONTACTO">
   <meta name="keywords" content="IMAGES, SITE, SPORTS, RAFTING, RECREATIONAL ACTIVITY, FAMILY ACTIVITY, CONTACT INFORMATION">
   <link rel="shortcut icon" href="../mediapro/rafting.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
- <!--<link rel="stylesheet" href="scss/styles.css"/>
- <link rel="stylesheet" href="css/styles.css" />--> 
+  <link rel="stylesheet" href="scss/styles.css"/>
   <title>Home</title>
 </head>
 
 <body>
-  <div id="content">
-    <header>
-      <div class="logo-box">
-        <a href="index.html"><img src="mediapro/raftinglogo.png" alt="logo" /></a>
-      </div>
-      <nav>
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="menu" class="hide">
-           <li class="active"><a href="index.html">Home</a></li>  
-            <li><a href="rivers.html">Rivers</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="faq.html">Faq</a></li>
-          </ul>
-    </nav>
-    </header>
-    <main>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active imagenRaft">
-            <img src="mediapro/boats rafts.jpg" class="d-block w-100 " alt="raft" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/panoraft.jpg" class="d-block w-100 " alt="raft1" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/raftagua.jpg" class="d-block w-100 " alt="raft2" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/raftkids.jpg" class="d-block w-100 " alt="raft3" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/raftriver.jpg" class="d-block w-100 " alt="raft4" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/raftspaisaje.jpg" class="d-block w-100 " alt="raft5" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/Raftwine.jpg" class="d-block w-100 " alt="raft6" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/sunraft.jpg" class="d-block w-100 " alt="raft7" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/teamraft.jpg" class="d-block w-100 " alt="raft9" />
-          </div>
-          <div class="carousel-item imagenRaft">
-            <img src="mediapro/WomensRaft.jpg" class="d-block w-100 " alt="raft10" />
-          </div>
+  <header>
+    <div class="container">
+      <div class="col">
+        <div class="row">
+          <img class="logoSite" src="mediapro/The Rafting club 1.png" alt="logo">
+          <nav class="navbar navbar-expand-lg  navbar-danger mb-5 botonera"  style="background-color: transparent;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fas fa-bars"  style="color:#A69CAC; font-size:28px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="rivers.html">Rivers</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </div>
+            </div>
+          </nav>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-      <div class="card">
+    </div>
+  </header>
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active imagenRaft">
+          <img src="mediapro/boats rafts.jpg" class="d-block w-100 " alt="raft" />
+        </div>
+        <div class="carousel-item imagenRaft">
+          <img src="mediapro/panoraft.jpg" class="d-block w-100 " alt="raft1" />
+        </div>
+        <div class="carousel-item imagenRaft">
+          <img src="mediapro/raftagua.jpg" class="d-block w-100 " alt="raft2" />
+        </div>
+        <div class="carousel-item imagenRaft">
+          <img src="mediapro/raftkids.jpg" class="d-block w-100 " alt="raft3" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="card targetaRecibe">
         <h5 class="card-header">Thanks</h5>
         <div class="card-body">
           <h5 class="card-title ">Thank you for your inquiry</h5>
           <p class="card-text">We will be answering as soon as possible, we invite you to continue browsing our site!!</p>
           <a href="index.html" class="custom-btn btn-12"><span>Click!</span><span>Home</span></a>
-          <!--<a href="index.html" class="btn btn-primary bg-success bg-gradient">HOME</a>-->
         </div>
       </div>
      </main>
   </div>
+  <footer>
+  <div class="footer">
+    &copy;
+    <span id="date"></span>
+    Melany Salome Ramirez| prof: Juan Manuel Van Oyen |camada
+    18035|Buenos Aires
+  </div>
+  <p>Last Modified: <span id="lastmod"></span></p>
+  <p><a href="siteplan.html">Site Plan</a></p>
+  <div class="social">
+    <a target="blank" href="https://www.facebook.com/jonaticadirectionerjb">
+      <i class="fab fa-facebook mediared1"></i></a>
+    <a target="blank" href="https://www.instagram.com/lovetotravel93/">
+      <i class="fab fa-instagram mediared1"></i></a>
+    <a target="blank" href="https://ar.pinterest.com/foreverjoantik/_saved/">
+      <i class="fab fa-pinterest mediared1"></i></a>
+  </div>
+</footer>
+<script src="js/date.js"></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

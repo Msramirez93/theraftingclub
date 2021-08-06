@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
  <link rel="stylesheet" href="scss/styles.css"/>
-   <!--<link rel="stylesheet" href="css/styles.css"/>-->
-  <title>Rivers</title>
+ <title>Rivers</title>
 </head>
 
 <body>
@@ -23,10 +22,10 @@
       <div class="col">
         <div class="row"> 
           <img class="logoSite" src="mediapro/The Rafting club 1.png" alt="logo">
-     <nav class="navbar navbar-expand-lg navbar-dark col-5 text-white bg-dark botonera">
+     <nav class="navbar navbar-expand-lg  navbar-danger mb-5 botonera"  style="background-color: transparent;">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"  style="color:#A69CAC; font-size:28px;"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -43,13 +42,18 @@
   </header>
   <main>
     <div class="banner-box">
-      <img src="mediapro/bannerhero.jpg" alt="banner-logo" />
+      <picture>
+        <source media="(max-width:525px )" srcset="../mediapro/bannerhero500.jpg" />
+        <source media="(max-width:800px)" srcset="../mediapro/bannerhero800.jpg" />
+        <source media="(max-width: 1200px)" srcset="../mediapro/bannerhero.jpg" />
+        <img class="def-img" src="../mediapro/bannerhero.jpg" alt="banner-logo" />
+      </picture>
     </div>
     <h1>Rivers</h1>
     <div class="container rivers-paragraph-1">
       <div class="col">
         <div class="row">
-        <h2 class="rivers-headline-1 rivers-paragraph col-12">
+        <h2 class="rivers-headline-1 col-12">
           Main Fork of the Salmon River, Idaho
         </h2>
         <img class="float-right-img" src="mediapro/SalmonRiver300x400.jpg" alt="salmon river" />
