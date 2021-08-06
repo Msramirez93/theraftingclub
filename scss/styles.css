@@ -26,6 +26,13 @@ h1, h2, h3 {
   font-size: 1.5rem;
 }
 
+.tittle {
+  font-size: 3rem;
+  margin: 20px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
 ol li {
   width: 5px;
   height: 5px;
@@ -124,7 +131,7 @@ p {
 footer {
   background-color: #121212;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   padding: 20px 20px;
 }
@@ -274,10 +281,6 @@ form label.first input {
     width: 90%;
   }
 }
-/*.rivers-paragraph{
-  text-align: center;
-  padding: 10px 10px;
-}*/
 .rivers-headline-1 {
   margin: 17px;
   padding: 17px;
@@ -287,13 +290,18 @@ form label.first input {
   margin: 55px 260px;
 }
 
+.tabla {
+  margin: 10px 35px;
+}
+
 @media only screen and (max-width: 769px) {
   .float-rigth-img {
-    margin: 10px 25px;
+    margin: 11px 30px;
   }
 
-  .rivers-left-img, .rivers-img-right {
-    margin: 10px -8px;
+  .rivers-left-img,
+.rivers-img-right {
+    margin: 11px -5px;
   }
 
   .rivers-paragraph {
@@ -301,12 +309,20 @@ form label.first input {
     font-size: 0.9rem;
     text-align: center;
   }
+
+  .video {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .rivers-paragraph {
     text-align: center;
     margin: auto;
     padding: 15px;
+  }
+
+  .video {
+    margin: 55px 280px;
   }
 }
 .containerGal {
@@ -325,12 +341,6 @@ form label.first input {
   justify-content: space-between;
 }
 
-.gall-header {
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: "Merriweather", serif;
-}
-
 .lemons {
   text-align: center;
   color: black;
@@ -339,6 +349,11 @@ form label.first input {
 }
 
 /*FAQ*/
+.tittle1 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
 .tarjeta {
   background-color: #A69CAC;
   border-radius: 15px;
@@ -362,17 +377,18 @@ form label.first input {
 .tarjeta__titulo {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  background-color: aliceblue;
   text-align: center;
+  font-size: "Poppins", sans-serif;
 }
 
 .tarjeta__parrafo {
   line-height: 28px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 15px 12px;
   background-color: skyblue;
   text-align: center;
   margin: -174px -12px 3px 262px;
+  font-size: "Poppins", sans-serif;
 }
 
 .article {
@@ -383,7 +399,7 @@ form label.first input {
 }
 
 .HAna {
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 30px;
   display: block;
@@ -391,6 +407,7 @@ form label.first input {
 }
 .HAna.HAna:hover {
   border: 2px solid #191d32;
+  filter: sepia();
 }
 
 .city_pic2 {
@@ -402,6 +419,7 @@ form label.first input {
 }
 .city_pic2.city_pic2:hover {
   border: 2px solid #191d32;
+  filter: sepia();
 }
 
 .text_2 {
@@ -410,19 +428,18 @@ form label.first input {
   padding: 0 23px 17px 24px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 769px) {
   /*Faq*/
   .HAna {
-    max-width: 550px;
+    width: 100%;
   }
 
   .text_2 {
-    font-size: 18px;
-    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
   }
 
   .city_pic2 {
-    padding-left: 0;
     width: 320px;
   }
 }
@@ -434,7 +451,7 @@ form label.first input {
 
   .HAna {
     width: 50%;
-    margin: 10px 20px;
+    margin: 15px 150px 20px;
     padding: 0;
   }
 

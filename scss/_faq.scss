@@ -1,4 +1,8 @@
 /*FAQ*/
+.tittle1{
+  font-size: 1.5rem;
+  margin: 15px;
+}
 .tarjeta {
   background-color: #A69CAC;
   border-radius: 15px;
@@ -20,16 +24,17 @@
 .tarjeta__titulo {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  background-color: aliceblue;
   text-align: center;
+  font-size: 'Poppins', sans-serif;
 }
 .tarjeta__parrafo {
     line-height: 28px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 15px 12px;
     background-color: skyblue;
     text-align: center;
     margin: -174px -12px 3px 262px;
+    font-size: 'Poppins', sans-serif;
 }
 .article {
   padding: 20px;
@@ -38,13 +43,14 @@
   margin: 30px;
 }
 .HAna {
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 30px;
   display: block;
   margin: 0 auto;
 &.HAna:hover{
   border: 2px solid #191d32;
+  filter: sepia();
 
 }
 }
@@ -56,6 +62,7 @@
   margin: 0 auto;
 &.city_pic2:hover{
   border: 2px solid #191d32;
+  filter: sepia();
  
 }
 }
@@ -64,37 +71,31 @@
   margin-top: 0;
   padding: 0 23px 17px 24px;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 769px){
    /*Faq*/
- 
-  .HAna {
-    max-width: 550px;
+.HAna {
+  width: 100%;
 }
 .text_2 {
-  font-size: 18px;
-  padding-left: 0;
+  font-size: 20px;
+  text-align: center;
 }
 .city_pic2 {
-  
-  padding-left: 0;
   width: 320px;
 }
 }
-
 @media only screen and (min-width: 1025px) {
   .article {
     width: 900px;
     margin: auto;
   }
-  
   .HAna {
     width: 50%;
-    margin: 10px 20px;
+    margin: 15px 150px 20px;
     padding: 0;
     
   }
   .text_2 {
     font-size: 22px;
   }
-  
   }

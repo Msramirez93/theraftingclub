@@ -1,7 +1,3 @@
-/*.rivers-paragraph{
-  text-align: center;
-  padding: 10px 10px;
-}*/
 .rivers-headline-1{
   margin: 17px;
   padding:17px;
@@ -9,18 +5,25 @@
 .video{
   margin:55px 260px;
 }
+.tabla{
+  margin: 10px 35px;
+}
 @media only screen and (max-width: 769px) {
  
 .float-rigth-img{
-  margin: 10px 25px;
-}
-.rivers-left-img , .rivers-img-right{
-  margin: 10px -8px;
+  margin: 11px 30px;
+} 
+.rivers-left-img , 
+.rivers-img-right{
+  margin: 11px -5px;
 }
 .rivers-paragraph{
   padding: 10px 48px; 
   font-size: .9rem;
   text-align: center;
+}
+.video{
+  display: none;
 }
 }
 @media only screen and (min-width:1024px) { 
@@ -29,7 +32,10 @@
     margin:auto;
     padding: 15px;
   }
-}
+  .video{
+      margin:55px 280px;
+    }
+  }
 
 
 
