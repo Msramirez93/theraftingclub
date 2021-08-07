@@ -22,9 +22,13 @@ h1 , h2 ,h3 {
   text-align: center;
   font-size: 1.5rem;
 }
+main{
+  margin: 0;
+  padding: 0;
+}
 .tittle{
   font-size: 3rem;
-  margin: 20px;
+  margin: 60px;
   text-align: center;
   font-family:'Merriweather', serif;
 }
@@ -166,7 +170,14 @@ a{
     margin: 0px 315px;
   }
 }
+@media only screen and (min-width: 1025px) {
 
+  .btn-12 span,
+  .btn-12 span:nth-child(1) ,
+  .btn-12 span:nth-child(2) {
+    margin: 10px 510px;
+  }
+}
 
 
 

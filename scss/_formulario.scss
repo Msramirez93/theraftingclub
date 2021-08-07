@@ -6,8 +6,8 @@
     font-size: 25px;
   }
   form fieldset {
-    margin: auto;
-    border: 8px solid black;
+    margin: 11px;
+    /*border: 8px solid black;*/
     padding: 1rem 1.5%;
     background-color: transparent;
   }
@@ -34,6 +34,7 @@
   .buttonForm{
     align-items: center;
     justify-content: center;
+    margin: 10px 500px;
   }
   @media only screen and (min-width: 1025px){ 
   .formulario {
@@ -44,7 +45,7 @@
     font-size: 25px;
   }
   form fieldset {
-    margin: auto;
+    margin: 10px 10px 0px 0px;
     border: 2px solid #d4b2d8;
     padding: 1rem 1.5%;
     background-color: transparent;

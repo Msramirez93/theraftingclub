@@ -49,7 +49,7 @@
   display: block;
   margin: 0 auto;
 &.HAna:hover{
-  border: 2px solid #191d32;
+  /*border: 2px solid #191d32;*/
   filter: sepia();
 
 }
@@ -61,10 +61,14 @@
   display: block;
   margin: 0 auto;
 &.city_pic2:hover{
-  border: 2px solid #191d32;
+  /*border: 2px solid #191d32;*/
   filter: sepia();
  
 }
+}
+.botonfaq{
+  margin:10px 10px;
+  
 }
 .text_2 {
   font-size: .5rem;

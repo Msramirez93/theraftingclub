@@ -11,9 +11,10 @@
   <meta name="keywords" content="IMAGES, SITE, RIVERS, SPORTS, RAFTING, RECREATIONAL ACTIVITY, FAMILY ACTIVITY">
   <link rel="shortcut icon" href="../mediapro/rafting.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
- <link rel="stylesheet" href="scss/styles.css"/>
- <title>Rivers</title>
+  <link rel="stylesheet" href="scss/styles.css"/>
+  <title>Rivers</title>
 </head>
 
 <body>
@@ -46,18 +47,18 @@
         <source media="(max-width:525px )" srcset="../mediapro/bannerhero500.jpg" />
         <source media="(max-width:800px)" srcset="../mediapro/bannerhero800.jpg" />
         <source media="(max-width: 1200px)" srcset="../mediapro/bannerhero.jpg" />
-        <img class="def-img" src="mediapro/bannerhero.jpg" alt="banner-logo" />
+        <img class="def-img" src="./mediapro/bannerhero.jpg" alt="banner-logo" />
       </picture>
     </div>
     <h1 class="tittle">Rivers</h1>
-    <div class="container rivers-paragraph-1">
-      <div class="col">
-        <div class="row">
+    <div class="container rivers-paragraph-1 ">
+      <div class="col py-5 px-lg-5 wow animate__ animate__fadeInLeft animated animate__delay-2s" data-wow-duration="0.7s">
+        <div class="row mx-lg-n5">
         <h2 class="rivers-headline-1 col-12">
           Main Fork of the Salmon River, Idaho
         </h2>
         <img class="float-right-img col-sm-6" src="mediapro/SalmonRiver300x400.jpg" alt="salmon river" />
-        <p class="rivers-paragraph text-right col-lg-5">
+        <p class="rivers-paragraph text-right col-lg-5 animate__rotateInDownLeft">
           Nestled deep in the Frank Church Wilderness of No Return winds the
           Salmon river. The Salmon was given the nickname long ago as the
           River of No Return by the people living near it because of the
@@ -79,7 +80,7 @@
           Desolation and Gray Canyon, Utah
         </h2>
         <img class="rivers-left-img col-sm-6" src="mediapro/Gray CanyonUT1.jpg" alt="Gray Canyon, UT" />
-        <p  class="rivers-paragraph-2 col-lg-5">
+        <p  class="rivers-paragraph-2 col-lg-5 animate__rotateInDownLeft">
             Winding through canyons in central Utah, in some of the most
             desolate land anywhere, the Green river flows towards the mighty
             Colorado river and the sea. High grey stone cliffs, beautiful
@@ -96,7 +97,7 @@
           <h2 class="rivers-headline-1 col-12">
             Grand Canyon, Arizona
           </h2>
-          <p class="rivers-paragraph-3 col-lg-5">
+          <p class="rivers-paragraph-3 col-lg-5 animate__rotateInDownLeft">
             This is the grand daddy of all canyons and the grand daddy of all
             river trips. You will never forget your visit to the Grand Canyon.
             Grand Canyon river rafting combines world-class whitewater with
@@ -126,17 +127,17 @@
         <tbody>
           <tr>
             <th scope="row">1°</th>
-            <td>Colorado</td>
+            <td>Grand Canyon Colorado</td>
             <td>Arizona</td>
           </tr>
           <tr>
             <th scope="row">2°</th>
-            <td>Rogue River</td>
-            <td>Oregon</td>
+            <td>Gray Canyon</td>
+            <td>Utah</td>
           </tr>
           <tr>
             <th scope="row">3°</th>
-            <td>Salmon River</td>
+            <td>Main Fork, Salmon River</td>
             <td>Idaho</td>
           </tr>
         </tbody>
@@ -165,6 +166,7 @@
     </div>
   </footer>
   <script src="js/date.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,6 +1,7 @@
 .home-headline-1{
   padding: 20px 20px;
   text-align: center;
+  margin-top: 1em;
 }
   .home-pragraph-3{
     font-size: 1rem;
@@ -26,4 +27,27 @@
 }
 .home-left-img{
  width: 300px;
+}
+.home-paragraph-2{
+  margin:40px;
+}
+.ubicacion{
+  margin:10px;
+  padding: 10px;
+}
+@media only screen and (max-width: 769px) {
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+.ubicacion{
+  margin: 14px 149px;
+  padding: 10px 10px;
+}
+.home-left-img .home-right-img:hover{
+  filter: blur(0em);
+  transition: filter 1.5s;
+  max-width: 100%;
+}
 }
