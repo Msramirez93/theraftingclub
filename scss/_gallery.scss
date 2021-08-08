@@ -29,16 +29,21 @@
     justify-items: center;
     grid-row-gap: 40px;
     padding-top: 2rem;
-    font-family: 'Fira Sans', sans-serif;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .gallery-main {
-   
-    padding-bottom: 4rem; 
+   padding-bottom: 4rem; 
     height: auto;   
 }
 
-.picture:hover {box-shadow: 0 0 40px #161b33;
+.picture:hover {
+  box-shadow: 0 0 40px #161b33;
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 .picture {
     border:opacity($color: #ccc);

@@ -202,8 +202,10 @@ a {
   grid-template-areas: "home-paragraph-1" "home-right-img" "home-left-img" "home-paragraph-2";
 }
 
-.home-left-img {
+.home-left-img, .home-right-img {
   width: 300px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 
 .home-paragraph-2 {
@@ -215,16 +217,38 @@ a {
   padding: 10px;
 }
 
+@media only screen and (max-width: 769px) {
+  .home-left-img .home-right-img {
+    width: auto;
+  }
+
+  .home-left-img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .home-right-img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .ubicacion {
+    margin: 3px;
+    padding: auto;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .ubicacion {
     margin: 14px 149px;
     padding: 10px 10px;
   }
 
-  .home-left-img .home-right-img:hover {
-    filter: blur(0em);
-    transition: filter 1.5s;
-    max-width: 100%;
+  .home-left-img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+    transform: scale(1.3);
+  }
+
+  .home-right-img:hover {
+    filter: drop-shadow(2px 4px 6px black);
+    transform: scale(1.3);
   }
 }
 .formulario {
@@ -345,9 +369,9 @@ form label.first input {
     text-align: center;
   }
 
-  .video {
+  /*.video{
     display: none;
-  }
+  }*/
 }
 @media only screen and (min-width: 1024px) {
   .rivers-paragraph {
@@ -394,7 +418,8 @@ form label.first input {
   justify-items: center;
   grid-row-gap: 40px;
   padding-top: 2rem;
-  font-family: "Fira Sans", sans-serif;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 
 .gallery-main {
@@ -404,6 +429,7 @@ form label.first input {
 
 .picture:hover {
   box-shadow: 0 0 40px #161b33;
+  transform: scale(1.3);
 }
 
 .picture {
