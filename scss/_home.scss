@@ -3,7 +3,7 @@
   text-align: center;
   margin-top: 1em;
 }
-  .home-pragraph-3{
+.home-pragraph-3{
     font-size: 1rem;
     margin: 20px 50px;
     }
@@ -32,7 +32,6 @@
  -webkit-transition: .3s ease-in-out;
  transition: .3s ease-in-out;
 }
-
 .home-paragraph-2{
   margin:40px;
 }
@@ -43,11 +42,15 @@
 @media only screen and (max-width: 769px) {
   .home-left-img .home-right-img{
     width: auto;
+
   }
   .home-left-img:hover{
     filter: drop-shadow(2px 4px 6px black);
   }
 .home-right-img:hover{
+  filter: drop-shadow(2px 4px 6px black);
+}
+.mirror{
   filter: drop-shadow(2px 4px 6px black);
 }
   .ubicacion{
@@ -73,5 +76,8 @@
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   
+}
+.mirror:hover{
+  filter: drop-shadow(2px 4px 6px black);
 }
 }

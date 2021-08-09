@@ -12,15 +12,6 @@
   position: relative;
   margin-bottom: 50px;
 }
-.tarjeta__img {
-  width: 300px;
-  height: 180px;
-  margin-right: 30px;
-&.tarjeta__img:hover {
-  border: 1px solid #121212;
-  box-shadow: #13273e;
-}
-}
 .tarjeta__titulo {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -61,9 +52,8 @@
   display: block;
   margin: 0 auto;
 &.city_pic2:hover{
-  /*border: 2px solid #191d32;*/
   filter: sepia();
- 
+  
 }
 }
 .botonfaq{
@@ -75,6 +65,7 @@
   margin-top: 0;
   padding: 0 23px 17px 24px;
 }
+
 @media only screen and (max-width: 769px){
    /*Faq*/
 .HAna {
