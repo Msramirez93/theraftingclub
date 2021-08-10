@@ -110,56 +110,57 @@
         </div>
       </div>
     </div>
-    <div class="contact_info">
+    <div class="contact_info" id="contacto">
       <div class="contact">
         <h2 class="con">Contact Information</h2>
-        <div id="content">
-          <div class="banner typeR">
-            <p class="paragraph-1">
-              You can contact me through my social media or if you wish you can
-              send a message in this space and without a doubt I will answer
-              your message as soon as possible.
-            </p>
-          </div>
+        <div class="banner typeR">
+          <p class="paragraph-1">
+            You can contact me through my social media or if you wish you can
+            send a message in this space and without a doubt I will answer
+            your message as soon as possible.
+          </p>
         </div>
-        <div class="container ubicacion">
-          <div class="col">
-            <div class="row">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.0881954927727!2d-111.64970484989608!3d35.204272063493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f48a88c0001%3A0x823b452b9d9d598b!2sThe%20Grand%20Canyon%20National%20Park%20Foundation!5e0!3m2!1ses!2sar!4v1623160460317!5m2!1ses!2sar"
-                width="500" height="350" style="border: 0" allowfullscreen="" class="mirror" loading="lazy"
-                class="mapa_picture d-block mx-auto "></iframe>
-              <p class="email-whatsapp col-sm-6 row-1">
+      </div>
+       <div class="container-fluid ubicacion">
+          <div class="row">
+            <div class="col-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.0881954927727!2d-111.64970484989608!3d35.204272063493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f48a88c0001%3A0x823b452b9d9d598b!2sThe%20Grand%20Canyon%20National%20Park%20Foundation!5e0!3m2!1ses!2sar!4v1623160460317!5m2!1ses!2sar"
+                width="500" height="350" style="border: 0" allowfullscreen="" class="mirror col-sm-6 " loading="lazy">
+              </iframe>
+                <p class="email-whatsapp col-lg-5">
                 <img class="gmail-personal" src="mediapro/gmail.png" alt="gmail-logo" class="mediared" />
                 melany.salome.ramirez@gmail.com
-                <br><img class="whatsappnumber" src="mediapro/whatsapp.png" alt="whatsApp-logo" class="mediared" />
+                <img class="whatsappnumber" src="mediapro/whatsapp.png" alt="whatsApp-logo" class="mediared" />
                 whatsapp: +5491149802303
               </p>
             </div>
+            </div>
           </div>
         </div>
-        <div class="formulario" id="contacto">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+               <div class="formulario col-10" >
           <form method="post" action="recibe.html">
             <fieldset>
-              <legend>Visitor Information</legend>
+              <label>Visitor Information</label>
               <label class="first">Full Name:
                 <input type="text" name="full-name" required pattern="[\sA-Za-z]{5,}" /></label>
-
-              <label class="first">Email:
+                <label class="first">Email:
                 <input type="email" name="email" placeholder="happyday@gmail.com" /></label>
-
-              <label class="first">Phone Number:
+                <label class="first">Phone Number:
                 <input type="tel" name="phone" placeholder="***-***-****" required /></label>
-
-              <label class="first">Zip code:
+                <label class="first">Zip code:
                 <input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)" placeholder="Insert Zip code" /></label>
               <label class="first">Comments:
                 <textarea name="comments" id="comments" class="first textarea"></textarea></label>
-
-            </fieldset>
-            <input type="submit" value="Send" class="buttonForm" />
-          </form>
+                <input type="submit" value="Send" class="buttonForm" />
+              </fieldset>
+            </form>
         </div>
+      </div>
+    </div>
+  </div>
       </div>
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-end">

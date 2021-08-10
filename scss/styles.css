@@ -38,10 +38,15 @@ main {
   font-family: "Merriweather", serif;
 }
 
-ol li {
-  width: 5px;
-  height: 5px;
-  border-radius: 20px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.carousel-indicators li {
+  border-radius: 100%;
+  width: 12px;
+  height: 10px;
 }
 
 p {
@@ -72,7 +77,6 @@ p {
   height: 40px;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  /*margin: 0px 122px;*/
   margin: 0px 500px;
   text-align: center;
   box-sizing: border-box;
@@ -80,14 +84,14 @@ p {
 }
 
 .btn-12 span:nth-child(1) {
-  margin: 0px 510px;
+  margin: 0px 440px;
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   transform: rotateX(90deg);
   transform-origin: 50% 50% -20px;
 }
 
 .btn-12 span:nth-child(2) {
-  margin: 0px 510px;
+  margin: 0px 440px;
   transform: rotateX(0deg);
   transform-origin: 50% 50% -20px;
 }
@@ -114,6 +118,10 @@ p {
   background-position: center;
 }
 
+.contact_info {
+  margin: 0 auto;
+}
+
 .contact {
   font-size: 1.5rem;
 }
@@ -124,15 +132,10 @@ p {
   text-align: center;
 }
 
-.map_picture {
-  max-width: 500px;
-}
-
-.container {
+/*.container{
   padding: 24px 0px;
   margin: -9px 0px 0px 8px;
-}
-
+}*/
 footer {
   background-color: #121212;
   color: white;
@@ -159,13 +162,21 @@ a {
   margin: 30px;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 564px) {
   .btn-12 span,
 .btn-12 span:nth-child(1),
 .btn-12 span:nth-child(2) {
-    margin: 0px 315px;
+    margin: 10px 141px;
   }
 }
+/*@media only screen and (max-width: 769px) {
+
+  .btn-12 span,
+  .btn-12 span:nth-child(1) ,
+  .btn-12 span:nth-child(2) {
+    margin: 0px 315px;
+  }
+}*/
 @media only screen and (min-width: 1025px) {
   .btn-12 span,
 .btn-12 span:nth-child(1),
@@ -190,6 +201,9 @@ a {
 .home-paragraph-1.home-paragraph-2 {
   font-size: 1em;
   text-align: center;
+  margin: -195px 25px 15px 335px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .paragraph-1 {
@@ -210,6 +224,10 @@ a {
 
 .home-paragraph-2 {
   margin: 40px;
+}
+
+.email-whatsapp {
+  margin: 10px;
 }
 
 .ubicacion {
@@ -303,6 +321,11 @@ form label.first input {
   margin: 10px 500px;
 }
 
+@media only screen and (max-width: 769px) {
+  .buttonForm {
+    margin: 0 38%;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .formulario {
     align-items: center;
@@ -314,10 +337,11 @@ form label.first input {
   }
 
   form fieldset {
-    margin: 10px 10px 0px 0px;
-    border: 2px solid #d4b2d8;
+    margin: 10px 11px 5px 148px;
+    border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
+    filter: drop-shadow(2px 4px 6px black);
   }
 
   form legend {
@@ -361,6 +385,11 @@ form label.first input {
   margin: 10px 35px;
 }
 
+.float-rigth-img {
+  width: 300px;
+  height: 400px;
+}
+
 @media only screen and (max-width: 769px) {
   .float-rigth-img {
     margin: 11px 30px;
@@ -376,10 +405,6 @@ form label.first input {
     font-size: 0.9rem;
     text-align: center;
   }
-
-  /*.video{
-    display: none;
-  }*/
 }
 @media only screen and (min-width: 1024px) {
   .rivers-paragraph {
@@ -388,8 +413,19 @@ form label.first input {
     padding: 15px;
   }
 
-  .video {
-    margin: 55px 280px;
+  .float-rigth-img:hover {
+    box-shadow: 0 0 40px #161b33;
+    filter: opacity(0.5);
+  }
+
+  .rivers-left-img:hover {
+    box-shadow: 0 0 40px #161b33;
+    filter: opacity(0.5);
+  }
+
+  .rivers-img-right:hover {
+    box-shadow: 0 0 40px #161b33;
+    filter: opacity(0.5);
   }
 }
 .containerGal {
@@ -399,13 +435,19 @@ form label.first input {
 
 .picture {
   width: 90%;
-  padding: 10px;
   box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.picture:hover {
+  box-shadow: 0 0 40px #161b33;
+  transform: scale(1.3);
 }
 
 .lemons {
@@ -426,25 +468,11 @@ form label.first input {
   justify-items: center;
   grid-row-gap: 40px;
   padding-top: 2rem;
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
 }
 
 .gallery-main {
   padding-bottom: 4rem;
   height: auto;
-}
-
-.picture:hover {
-  box-shadow: 0 0 40px #161b33;
-  transform: scale(1.3);
-}
-
-.picture {
-  border: 1;
-  padding: 0 0 20px;
-  margin: auto;
-  max-width: 90%;
 }
 
 img[data-src] {
@@ -464,6 +492,12 @@ img {
     justify-items: center;
     grid-column-gap: 15px;
     grid-row-gap: 50px;
+  }
+
+  .picture {
+    border: 1;
+    margin: auto;
+    max-width: 90%;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -485,106 +519,12 @@ img {
   }
 }
 /*FAQ*/
-.tittle1 {
-  font-size: 1.5rem;
-  margin: 15px;
+.preguntas1 {
+  margin: 12px 84px 100px;
 }
 
-.tarjeta {
-  background-color: #A69CAC;
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.tarjeta__titulo {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: "Poppins", sans-serif;
-}
-
-.tarjeta__parrafo {
-  line-height: 28px;
-  font-size: 1rem;
-  padding: 15px 12px;
-  background-color: skyblue;
-  text-align: center;
-  margin: -174px -12px 3px 262px;
-  font-size: "Poppins", sans-serif;
-}
-
-.article {
-  padding: 20px;
-  box-shadow: 0px 4px 30px 15px rgba(104, 104, 104, 0.1);
-  font-size: 1.6em;
-  margin: 30px;
-}
-
-.HAna {
-  width: 100%;
-  text-align: center;
-  padding: 30px;
-  display: block;
-  margin: 0 auto;
-}
-.HAna.HAna:hover {
-  /*border: 2px solid #191d32;*/
-  filter: sepia();
-}
-
-.city_pic2 {
-  width: 80%;
-  padding: 0 23px 17px 24px;
-  padding: 30px;
-  display: block;
-  margin: 0 auto;
-}
-.city_pic2.city_pic2:hover {
-  filter: sepia();
-}
-
-.botonfaq {
-  margin: 10px 10px;
-}
-
-.text_2 {
-  font-size: 0.5rem;
-  margin-top: 0;
-  padding: 0 23px 17px 24px;
-}
-
-@media only screen and (max-width: 769px) {
-  /*Faq*/
-  .HAna {
-    width: 100%;
-  }
-
-  .text_2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .city_pic2 {
-    width: 320px;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .article {
-    width: 900px;
-    margin: auto;
-  }
-
-  .HAna {
-    width: 50%;
-    margin: 15px 150px 20px;
-    padding: 0;
-  }
-
-  .text_2 {
-    font-size: 22px;
+@media only screen and (max-width: 564px) {
+  .preguntas1 {
+    margin: 10px 40px;
   }
 }/*# sourceMappingURL=styles.css.map */

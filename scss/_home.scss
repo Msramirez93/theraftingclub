@@ -3,15 +3,18 @@
   text-align: center;
   margin-top: 1em;
 }
-.home-pragraph-3{
+  .home-pragraph-3{
     font-size: 1rem;
     margin: 20px 50px;
-    }
+}
 .home-paragraph-1 {
   margin:40px;
-  &.home-paragraph-2{
+ &.home-paragraph-2{
     font-size: 1em;
     text-align: center;
+    margin: -195px 25px 15px 335px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 .paragraph-1{
@@ -35,6 +38,9 @@
 .home-paragraph-2{
   margin:40px;
 }
+.email-whatsapp{
+  margin: 10px ;
+}
 .ubicacion{
   margin:10px;
   padding: 10px;
@@ -42,7 +48,7 @@
 @media only screen and (max-width: 769px) {
   .home-left-img .home-right-img{
     width: auto;
-
+    
   }
   .home-left-img:hover{
     filter: drop-shadow(2px 4px 6px black);

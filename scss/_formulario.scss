@@ -36,6 +36,11 @@
     justify-content: center;
     margin: 10px 500px;
   }
+  @media only screen and (max-width: 769px){
+    .buttonForm{
+      margin: 0 38%;
+    }
+  }
   @media only screen and (min-width: 1025px){ 
   .formulario {
     align-items: center;
@@ -45,12 +50,12 @@
     font-size: 25px;
   }
   form fieldset {
-    margin: 10px 10px 0px 0px;
-    border: 2px solid #d4b2d8;
+    margin: 10px 11px 5px 148px;
+    border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
+    filter: drop-shadow(2px 4px 6px black);
   }
-  
   form legend {
     color: #1b1a1a;
     font-size: 20px;
