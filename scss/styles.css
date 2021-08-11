@@ -84,7 +84,7 @@ p {
 }
 
 .btn-12 span:nth-child(1) {
-  margin: 0px 440px;
+  margin: 0px 440px auto;
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   transform: rotateX(90deg);
   transform-origin: 50% 50% -20px;
@@ -318,7 +318,7 @@ form label.first input {
 .buttonForm {
   align-items: center;
   justify-content: center;
-  margin: 10px 500px;
+  margin: 10px 377px auto;
 }
 
 @media only screen and (max-width: 769px) {
