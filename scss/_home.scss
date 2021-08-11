@@ -41,6 +41,10 @@
 .email-whatsapp{
   margin: 10px ;
 }
+.mapa{
+  display: flex;
+  justify-content: space-around;
+}
 
 @media only screen and (max-width: 769px) {
   .home-left-img .home-right-img{
@@ -56,18 +60,12 @@
 .mirror{
   filter: drop-shadow(2px 4px 6px black);
 }
-  .ubicacion{
-    margin:3px;
-   padding: auto;
-  }
+  
 }
 
 @media only screen and (min-width: 1025px) {
 
-.ubicacion{
-  margin: 14px 149px;
-  padding: 10px 10px;
-}
+
 .home-left-img:hover{
   filter: drop-shadow(2px 4px 6px black);
   -webkit-transform: scale(1.3);

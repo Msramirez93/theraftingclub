@@ -85,24 +85,24 @@
         <div class="row">
           <h2 class="home-headline-1 col-12">
             We Look for the Connection with Nature</h2>
-          <p class="home-paragraph-1 col-sm-6 row-1 box animate__animated animate__bounceInLeft">
+          <p class="home-paragraph-1 col-sm-6 row-1 wow animate__animated animate__bounceInLeft">
             We believe that there is nothing like a river trip to relax.
             Choosing new adventures can be difficult when planning new
             vacations, but if you are looking for a new way to enjoy and be more
             connected with nature, we invite you to discover these majestic
             places with us.
           </p>
-          <img class="home-right-img col-lg-5 d-block mx-auto box animate__animated animate__bounceInUp" src="mediapro/rafting400x300.jpg" alt="rafting ejemplo" />
+          <img class="home-right-img col-lg-5 d-block mx-auto wow animate__animated animate__bounceInUp" src="mediapro/rafting400x300.jpg" alt="rafting ejemplo" />
           <h2 class="home-headline-1 col-12">
             Join Us to See These Beautiful Sunsets</h2>
-            <p class="home-paragraph-2 col-sm-6 box animate__animated animate__bounceInLeft">
+            <p class="home-paragraph-2 col-sm-6 wow animate__animated animate__bounceInLeft">
             "The sunsets are so beautiful that it seems almost as if we are looking through the gates of heaven." (John
             Lubbock). The Grand Canyon is majestic and undoubtedly the most famous landmark in Arizona, and is a natural
             wonder that you must see.
           </p>
-          <img class="home-left-img col-lg-5 d-block mx-auto box animate__animated animate__bounceInUp" src="mediapro/contactus400x300.jpg" alt="rafting1" />
+          <img class="home-left-img col-lg-5 d-block mx-auto wow animate__animated animate__bounceInUp" src="mediapro/contactus400x300.jpg" alt="rafting1" />
           <h2 class="home-headline-1 col-12">Come and Enjoy These Beautiful Outdoor Activities with Us</h2>
-          <p class="home-pragraph-3 box animate__animated animate__bounceInLeft">
+          <p class="home-pragraph-3 wow animate__animated animate__bounceInLeft">
             We invite you to come to relax with us at one of the amazing rivers
             we visit. Check out our trips and let us know which one best suits
             you. We are waiting to hear from you!
@@ -124,15 +124,18 @@
        <div class="container-fluid">
           <div class="row">
             <div class="col-12">
+              <div class=" mapa col-10">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.0881954927727!2d-111.64970484989608!3d35.204272063493704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872d8f48a88c0001%3A0x823b452b9d9d598b!2sThe%20Grand%20Canyon%20National%20Park%20Foundation!5e0!3m2!1ses!2sar!4v1623160460317!5m2!1ses!2sar"
-                width="500" height="350" style="border: 0" allowfullscreen="" class="mirror col-lg-5" loading="lazy">
-              </iframe>
-                <p class="email-whatsapp col-sm-6 ">
+                width="500" height="350" style="border: 0" allowfullscreen="" class="mirror " loading="lazy">
+              </iframe></div>
+              <div>
+              <p class="email-whatsapp  ">
                 <img class="gmail-personal" src="mediapro/gmail.png" alt="gmail-logo" class="mediared" />
                 melany.salome.ramirez@gmail.com
                 <img class="whatsappnumber" src="mediapro/whatsapp.png" alt="whatsApp-logo" class="mediared" />
                 whatsapp: +5491149802303
               </p>
+            </div>
             </div>
             </div>
           </div>
@@ -195,7 +198,17 @@
     </div>
   </footer>
   <script src="js/date.js"></script>
-  <script src="js/wow.min.js"></script>
+  <script src="js/wow.min.js">
+   wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();</script>
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
