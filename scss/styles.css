@@ -132,10 +132,6 @@ p {
   text-align: center;
 }
 
-/*.container{
-  padding: 24px 0px;
-  margin: -9px 0px 0px 8px;
-}*/
 footer {
   background-color: #121212;
   color: white;
@@ -169,14 +165,6 @@ a {
     margin: 10px 141px;
   }
 }
-/*@media only screen and (max-width: 769px) {
-
-  .btn-12 span,
-  .btn-12 span:nth-child(1) ,
-  .btn-12 span:nth-child(2) {
-    margin: 0px 315px;
-  }
-}*/
 @media only screen and (min-width: 1025px) {
   .btn-12 span,
 .btn-12 span:nth-child(1),
@@ -228,11 +216,6 @@ a {
 
 .email-whatsapp {
   margin: 10px;
-}
-
-.ubicacion {
-  margin: 10px;
-  padding: 10px;
 }
 
 @media only screen and (max-width: 769px) {
