@@ -1,10 +1,13 @@
+@import "variables";
+@import "mixin";
+
 .home-headline-1{
   padding: 20px 20px;
   text-align: center;
   margin-top: 1em;
 }
   .home-pragraph-3{
-    font-size: 1rem;
+    @include tamañoFuente ($xs);
     margin: 20px 50px;
 }
 .home-paragraph-1 {
@@ -44,6 +47,7 @@
 .mapa{
   display: flex;
   justify-content: space-around;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 769px) {

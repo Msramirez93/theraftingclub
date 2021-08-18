@@ -20,14 +20,14 @@ body{
 }
 h1 , h2 ,h3 {
   text-align: center;
-  font-size: 1.5rem;
+ @include tamañoFuente ($sm);
 }
 main{
   margin: 0;
   padding: 0;
 }
 .tittle{
-  font-size: 3rem;
+  @include tamañoFuente ($xl);
   margin: 60px;
   text-align: center;
   font-family:'Merriweather', serif;
@@ -43,7 +43,7 @@ main{
 }
 p{
   font-family:$fuentedos ;
-  font-size: 1rem;
+  @include tamañoFuente ($xs);
 }
 .btn-12{
   color:#121212;
@@ -132,7 +132,7 @@ p{
   margin: 0 auto;
 }
 .contact {
-  font-size: 1.5rem;
+  @include tamañoFuente ($sm)
 }
 .con {
   font-size: 2em;
