@@ -1,0 +1,109 @@
+@media only screen and (max-width: 1025px) {
+
+    //generales
+    .btn-12 span,
+    .btn-12 span:nth-child(1) ,
+    .btn-12 span:nth-child(2) {
+      margin: 10px 680x;
+    }
+ //home
+    .home-left-img:hover{
+      filter: drop-shadow(2px 4px 6px black);
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+       }
+    
+     .home-right-img:hover{
+      filter: drop-shadow(2px 4px 6px black);
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      
+    }
+    .mirror:hover{
+      filter: drop-shadow(2px 4px 6px black);
+    }
+    .mapa{
+        display: flex;
+        margin: 50px;
+    }
+    //rivers
+    .rivers-paragraph{
+        text-align: center;
+        margin:auto;
+        padding: 15px;
+      }
+      .float-rigth-img,
+      .rivers-left-img
+      .rivers-img-right{
+        width: 400px;
+      height: 300px;
+      }
+      .float-rigth-img:hover{
+       box-shadow: 0 0 40px #161b33;
+       filter: opacity(0.5);
+      }
+      .rivers-left-img:hover {
+        box-shadow: 0 0 40px #161b33;
+        filter: opacity(0.5);
+      } 
+      .rivers-img-right:hover{
+        box-shadow: 0 0 40px #161b33;
+        filter: opacity(0.5);
+      }
+   /*gallery*/
+   .gallery-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 18px;
+    justify-self: center;
+   
+} 
+.images {
+    padding: auto;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+/*formulario*/
+.formulario {
+    align-items: center;
+    justify-content: center;
+  }
+  .storm1 {
+    font-size: 25px;
+  }
+  form fieldset {
+    margin: 10px 11px 5px 148px;
+    border: 2px solid transparent;
+    padding: 1rem 1.5%;
+    background-color: transparent;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  form legend {
+    color: #1b1a1a;
+    font-size: 20px;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 0.5rem 0rem;
+  }
+  form label.first {
+    display: block;
+    padding-top: 1rem;
+    color: #251e1e;
+    font-size: 15px;
+  }
+  form label.first input {
+    display: block;
+    width: 90%;
+    padding: 5px 5px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  .textarea {
+    display: block;
+    margin: 1rem 0.5rem 1rem;
+    width: 90%;
+  }     
+    }
+    

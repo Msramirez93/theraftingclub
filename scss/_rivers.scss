@@ -12,42 +12,7 @@
   width: 300px;
   height: 400px;
 }
-@media only screen and (max-width: 769px) {
- 
-.float-rigth-img{
-  margin: 11px 30px;
-} 
-.rivers-left-img , 
-.rivers-img-right{
-  margin: 11px -5px;
-}
-.rivers-paragraph{
-  padding: 10px 48px; 
-  font-size: .9rem;
-  text-align: center;
-}
 
-}
-@media only screen and (min-width:1024px) { 
-  .rivers-paragraph{
-    text-align: center;
-    margin:auto;
-    padding: 15px;
-  }
-  .float-rigth-img:hover{
-   box-shadow: 0 0 40px #161b33;
-   filter: opacity(0.5);
-  }
-  .rivers-left-img:hover {
-    box-shadow: 0 0 40px #161b33;
-    filter: opacity(0.5);
-  } 
-  .rivers-img-right:hover{
-    box-shadow: 0 0 40px #161b33;
-    filter: opacity(0.5);
-  }
-   
-  }
 
 
 

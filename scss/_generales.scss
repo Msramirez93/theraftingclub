@@ -1,37 +1,41 @@
 @import "variables";
-@import "mixin";
+
 
 .logoSite{
   height: 100px;
-  }
+  text-align: center;
+  margin:10px 0;
+}
 body{
   font-family: $fuente;
   background-color: #161B33;
   background-image: url(../mediapro/fondodelsitiogeneral.jpg);
   height: 100%;
-  color:#121212;
-  font-size: 1.2rem;
+  color: #121212 ;
+  font-size: 1.2rem; 
 }
  nav .botonera{
-  color: white;
+  color: #161B33;
   font-size: 20px;
   margin: 10px 10px 10px;
   padding: 0;
   word-spacing: 20px;
 }
+
 h1 , h2 ,h3 {
+  font-size: 1.5rem;
   text-align: center;
- @include tamañoFuente ($sm);
+ 
 }
 main{
   margin: 0;
   padding: 0;
 }
 .tittle{
-  @include tamañoFuente ($xl);
+  font-size: 3rem;
   margin: 60px;
   text-align: center;
-  font-family:'Merriweather', serif;
+  font-family: $fuente;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -44,7 +48,7 @@ main{
 }
 p{
   font-family:$fuentedos ;
-  @include tamañoFuente ($xs);
+  font-size: 1.5rem;
 }
 .btn-12{
   color:#121212;
@@ -58,6 +62,7 @@ p{
   line-height: 42px;
   -webkit-perspective: 230px;
   perspective: 230px;
+  margin: auto;
 }
 .btn-12 span {
   color: #121212;
@@ -71,16 +76,17 @@ p{
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   border-radius: 5px;
-  margin:0px 500px;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all .3s;
   transition: all .3s;
+  margin: auto;
+  position: relative;
 }
 .btn-12 span:nth-child(1) {
-  margin:0px 440px auto;
+  margin:auto;
   box-shadow:
   -7px -7px 20px 0px #fff9,
   -4px -4px 5px 0px #fff9,
@@ -92,15 +98,17 @@ p{
   -webkit-transform-origin: 50% 50% -20px;
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
+  position: relative;
 }
 .btn-12 span:nth-child(2) {
-  margin:0px 440px;
+  margin:auto;
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
   -webkit-transform-origin: 50% 50% -20px;
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
+  position: relative;
 }
 .btn-12:hover span:nth-child(1) {
   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
@@ -133,7 +141,8 @@ p{
   margin: 0 auto;
 }
 .contact {
-  @include tamañoFuente ($sm)
+  
+  font-size: 1.5rem;
 }
 .con {
   font-size: 2em;
@@ -148,8 +157,30 @@ footer{
   text-align: center;
   padding: 20px 20px;
 }
-.mediared1{
-  width: 35px;
+.mediared{
+  margin: 20px auto;
+}
+.mediared a {
+  font-size:8vw;
+  background-color: rgba(211, 0, 0, 0.658);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.gmail a:hover{
+  text-decoration:none;
+  background-color: rgba(255, 255, 255, 0.514);
+  color: #eb1313f6;
+}
+.wtp a:hover{
+  text-decoration:none;
+  background-color: rgba(255, 255, 255, 0.514);
+  color: #1bd741;
+}
+
+.mediared a i{
+  margin: 30px;
 }
 a{
    text-decoration: none;
@@ -162,22 +193,14 @@ a{
 .number{
   margin: 30px;
 }
-@media only screen and (max-width: 564px){
-  .btn-12 span,
-  .btn-12 span:nth-child(1) ,
-  .btn-12 span:nth-child(2) {
-    margin: 10px 141px;
-  }
+.mirror:hover{
+  box-shadow: 0 0 40px #161b33;
 }
 
-@media only screen and (min-width: 1025px) {
 
-  .btn-12 span,
-  .btn-12 span:nth-child(1) ,
-  .btn-12 span:nth-child(2) {
-    margin: 10px 510px;
-  }
-}
+
+
+
 
 
 

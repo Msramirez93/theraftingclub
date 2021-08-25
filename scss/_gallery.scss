@@ -53,36 +53,5 @@ img {
     transition: filter 1.5s;
     max-width: 100%;
     }
-    @media only screen and (max-width: 769px){
-   
-    .gallery-pictures {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      grid-column-gap: 15px;
-      grid-row-gap: 50px;
-   
-      }
-      .picture {
-        border:opacity($color: #ccc);
-        margin: auto;
-        max-width: 90%;
-    }
-    }
-    @media only screen and (min-width: 1025px) {
-    .gallery-pictures {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 18px;
-      justify-self: center;
-     
-  } 
-  .images {
-      padding: auto;
-      max-width: 100%;
-  }
-  img{
-      max-width: 100%;
-  }
-}
+    
+  

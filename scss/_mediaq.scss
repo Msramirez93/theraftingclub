@@ -1,0 +1,60 @@
+@media only screen and (max-width: 759px) {
+    /*home*/
+    .bananas{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .home-left-img .home-right-img{
+      width: auto;
+    }
+    .home-left-img:hover{
+      filter: drop-shadow(2px 4px 6px black);
+    }
+  .home-right-img:hover{
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  .mirror{
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  .email-whatsapp{
+   font-size: 4vw;
+  }
+  /* rivers*/
+  .float-rigth-img{
+    margin: 11px 30px;
+  } 
+  .rivers-left-img , 
+  .rivers-img-right{
+    margin: 11px -5px;
+  }
+  .rivers-paragraph{
+    padding: 10px 48px; 
+    font-size: .9rem;
+    text-align: center;
+  }
+  /*gallery*/
+  .gallery-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 50px;
+ 
+    }
+    .picture {
+      border:opacity($color: #ccc);
+      margin: auto;
+      max-width: 90%;
+  }
+  /*formulario*/
+  .buttonForm{
+    margin: 0 38%;
+  }
+  .mapa{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  }
