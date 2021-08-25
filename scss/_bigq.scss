@@ -31,6 +31,7 @@
         text-align: center;
         margin:auto;
         padding: 15px;
+        
       }
       .float-rigth-img,
       .rivers-left-img
@@ -51,7 +52,7 @@
         filter: opacity(0.5);
       }
    /*gallery*/
-   .gallery-pictures {
+.gallery-pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;

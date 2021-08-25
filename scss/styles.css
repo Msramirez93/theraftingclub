@@ -37,24 +37,12 @@ h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
-.carousel-control-next-icon .carousel-control-next-icon,
-.carousel-control-next-icon .carousel-control-prev-icon,
-.carousel-control-prev-icon .carousel-control-next-icon,
-.carousel-control-prev-icon .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   background-image: none;
-}
-.carousel-control-next-icon .carousel-indicators li,
-.carousel-control-prev-icon .carousel-indicators li {
-  border-radius: 100%;
-  width: 12px;
-  height: 10px;
 }
 
-.carousel-indicators li .carousel-control-next-icon,
-.carousel-indicators li .carousel-control-prev-icon {
-  background-image: none;
-}
-.carousel-indicators li .carousel-indicators li {
+.carousel-indicators li {
   border-radius: 100%;
   width: 12px;
   height: 10px;
@@ -421,26 +409,22 @@ a {
   grid-template-areas: "home-paragraph-1" "home-right-img" "home-left-img" "home-paragraph-2";
 }
 
-.home-left-img, .home-right-img {
-  width: 300px;
-  transform: scale(1);
-  transition: 0.3s ease-in-out;
+.home-left-img:hover {
+  box-shadow: 0 0 40px #161b33;
+  filter: sepia(0.5);
+}
+
+.home-right-img:hover {
+  box-shadow: 0 0 40px #161b33;
+  filter: sepia(0.5);
 }
 
 .home-paragraph-2 {
   margin: 40px;
 }
 
-.email-whatsapp {
-  margin: 10px;
-}
-
 .mapa {
   display: flex;
-}
-
-.home-left-img, .home-right-img {
-  width: 400px;
 }
 
 .contact {
