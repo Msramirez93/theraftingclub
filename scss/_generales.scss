@@ -1,18 +1,25 @@
 @import "variables";
 
-
-.logoSite{
+@mixin logo {
   height: 100px;
   text-align: center;
   margin:10px 0;
 }
-body{
+.logoSite{
+ @include logo;
+}
+@mixin body{
   font-family: $fuente;
   background-color: #161B33;
   background-image: url(../mediapro/fondodelsitiogeneral.jpg);
+  //background-image: url(../mediapro/aguafon.jpg);
   height: 100%;
   color: #121212 ;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
+
+}
+body{
+  @include body;
 }
  nav .botonera{
   color: #161B33;
@@ -23,21 +30,18 @@ body{
 }
 
 h1 , h2 ,h3 {
-  font-size: 1.5rem;
+  font-size: $sm;
   text-align: center;
  
 }
-main{
-  margin: 0;
-  padding: 0;
-}
 .tittle{
-  font-size: 3rem;
+  font-size: $xl;
   margin: 60px;
   text-align: center;
   font-family: $fuente;
 }
-.carousel-control-next-icon,
+@mixin carousel{
+  .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-image:none;
 }
@@ -46,9 +50,17 @@ main{
   width: 12px;
   height: 10px
 }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  @include carousel;
+}
+.carousel-indicators li{
+  @include carousel;
+}
 p{
   font-family:$fuentedos ;
-  font-size: 1.5rem;
+  font-size: $sm;
 }
 .btn-12{
   color:#121212;
@@ -141,8 +153,7 @@ p{
   margin: 0 auto;
 }
 .contact {
-  
-  font-size: 1.5rem;
+  font-size: $sm;
 }
 .con {
   font-size: 2em;

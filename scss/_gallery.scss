@@ -1,3 +1,7 @@
+@import "mediaq";
+@import "bigq";
+@import "variables";
+
 .containerGal {
   display: block;
   margin-bottom: 60px;
@@ -28,7 +32,7 @@
   }
   .gallery-title {
     font-size: 40px;
-    font-family: 'Padauk', sans-serif;
+    font-family: $fuente;
 }
 .gallery-pictures {
     display: grid;

@@ -1,3 +1,7 @@
+@import "mediaq";
+@import "bigq";
+@import "variables";
+
 .rivers-headline-1{
   margin: 17px;
   padding:17px;
@@ -9,8 +13,16 @@
   margin: 10px 35px;
 }
 .float-rigth-img{
-  width: 300px;
   height: 400px;
+} 
+
+.rivers-img-right{
+  height: 400px;
+  
+}
+.rivers-left-img{
+  height: 400px;
+  padding: 10px 10px;
 }
 
 
