@@ -28,14 +28,14 @@
         margin: 50px;
     }
     //rivers
-   
+   .img-p{
+      display: flex;
+      flex-direction: column;
+   }
     .rivers-paragraph-3{
       text-align: center;
       margin:auto;
       padding: 15px;
-      display: flex;
-      flex-direction: column;
-      
       }
       .float-rigth-img,
       .rivers-left-img
