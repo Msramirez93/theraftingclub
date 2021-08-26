@@ -56,14 +56,13 @@
         filter: opacity(0.5);
       }
    /*gallery*/
-.gallery-pictures {
+   .gallery-pictures {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 18px;
-    justify-self: center;
-   
-} 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 40px;
+    padding-top: 2rem;
+   }
 .images {
     padding: auto;
     max-width: 100%;

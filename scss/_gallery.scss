@@ -25,18 +25,25 @@
     color: black;
     margin:5px -10px 67px 0px;
     padding: 3px 10px 13px 13px;
+    
+  }
+  .number{
+    text-shadow: 3px 0px #86230de3;
+    
   }
 .gallery-title {
     font-size: 40px;
     font-family: $fuente;
 }
 .gallery-pictures {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    grid-row-gap: 40px;
-    padding-top: 2rem;
-   }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 18px;
+  justify-self: center;
+ 
+} 
+
 
 .gallery-main {
    padding-bottom: 4rem; 

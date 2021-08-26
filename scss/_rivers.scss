@@ -18,6 +18,10 @@
   padding: 0;
   object-fit: cover;
 } 
+.float-rigth-img:hover{
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
+}
 
 .rivers-img-right{
   height: 400px;
@@ -25,11 +29,19 @@
   padding: 0;
   object-fit: cover;
 }
+.rivers-img-right:hover{
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
+}
 .rivers-left-img{
   height: 400px;
   border: 3px solid #ffffff52;
   padding: 0;
   object-fit: cover;
+}
+.rivers-left-img:hover{
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
 }
 
 

@@ -10,7 +10,7 @@
 
 body {
   font-family: "Merriweather", serif;
-  background-color: #161B33;
+  background-color: white;
   background-image: url(../mediapro/fondo3.jpg);
   background-size: cover;
   background-position: center;
@@ -37,6 +37,7 @@ h1, h2, h3 {
   margin: 60px;
   text-align: center;
   font-family: "Merriweather", serif;
+  text-shadow: 3px 0px #86230de3;
 }
 
 .carousel-control-next-icon,
@@ -83,7 +84,6 @@ p {
   box-sizing: border-box;
   transition: all 0.3s;
   margin: auto;
-  position: relative;
 }
 
 .btn-12 span:nth-child(1) {
@@ -124,6 +124,7 @@ p {
   font-size: 2em;
   padding: 2px 2px;
   text-align: center;
+  text-shadow: 3px 0px #ffffffe3;
 }
 
 footer {
@@ -337,6 +338,11 @@ form label.first input {
      object-fit: cover;
 }
 
+.float-rigth-img:hover {
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
+}
+
 .rivers-img-right {
   height: 400px;
   border: 3px solid #ffffff52;
@@ -345,12 +351,22 @@ form label.first input {
      object-fit: cover;
 }
 
+.rivers-img-right:hover {
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
+}
+
 .rivers-left-img {
   height: 400px;
   border: 3px solid #ffffff52;
   padding: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.rivers-left-img:hover {
+  box-shadow: 0 0 40px #161b33;
+  filter: opacity(0.5);
 }
 
 .containerGal {
@@ -382,6 +398,10 @@ form label.first input {
   padding: 3px 10px 13px 13px;
 }
 
+.number {
+  text-shadow: 3px 0px #86230de3;
+}
+
 .gallery-title {
   font-size: 40px;
   font-family: "Merriweather", serif;
@@ -389,10 +409,10 @@ form label.first input {
 
 .gallery-pictures {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  grid-row-gap: 40px;
-  padding-top: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 18px;
+  justify-self: center;
 }
 
 .gallery-main {
@@ -477,10 +497,10 @@ img {
   /*gallery*/
   .gallery-pictures {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 18px;
-    justify-self: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 40px;
+    padding-top: 2rem;
   }
 
   .images {

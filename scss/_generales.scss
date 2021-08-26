@@ -10,9 +10,8 @@
 }
 @mixin body{
   font-family: $fuente;
-  background-color: #161B33;
+  background-color: white;
   background-image: url(../mediapro/fondo3.jpg);
-  //background-image: url(../mediapro/aguafon.jpg);
   background-size: cover;
   background-position:center;
   height: 100%;
@@ -41,6 +40,7 @@ h1 , h2 ,h3 {
   margin: 60px;
   text-align: center;
   font-family: $fuente;
+  text-shadow:  3px 0px #86230de3;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -88,7 +88,7 @@ p{
   -webkit-transition: all .3s;
   transition: all .3s;
   margin: auto;
-  position: relative;
+  
 }
 .btn-12 span:nth-child(1) {
   margin:auto;
@@ -143,8 +143,8 @@ p{
   font-size: 2em;
   padding: 2px 2px;
   text-align: center;
+  text-shadow: 3px 0px #ffffffe3;
 }
-
 footer{
   background-color: #121212;
   color: white;
@@ -163,7 +163,6 @@ footer{
   border-radius: 20px;
   color: white;
 }
-
 .gmail a:hover{
   text-decoration:none;
   background-color: rgba(255, 255, 255, 0.514);
@@ -191,6 +190,7 @@ a{
 .mirror:hover{
   box-shadow: 0 0 40px #161b33;
 }
+
 
 
 
