@@ -5,11 +5,14 @@
 .home-headline-1{
   padding: 20px 20px;
   text-align: center;
-  margin-top: 2em;
+  margin: 2em 0;
+  background-color: #ffffff52;
 }
 .home-pragraph-3{
   font-size: $sm;
-  margin: 30px 50px;
+  margin: 30px;
+  background-color: #ffffff52;
+  padding: 10px;
 }
 .home-paragraph-1 {
   margin:40px;
@@ -32,7 +35,18 @@
                       "home-left-img"
                       "home-paragraph-2";
 }
-
+.bananas{
+  display: flex;
+  justify-content: center;
+}
+.home-left-img{
+  object-fit:cover;
+  padding:0;
+}
+.home-right-img{
+  object-fit: cover;
+  padding: 0;
+}
 .home-left-img:hover{
   box-shadow: 0 0 40px #161b33;
   filter: sepia(0.5);

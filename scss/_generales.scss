@@ -11,8 +11,10 @@
 @mixin body{
   font-family: $fuente;
   background-color: #161B33;
-  background-image: url(../mediapro/fondodelsitiogeneral.jpg);
+  background-image: url(../mediapro/fondo3.jpg);
   //background-image: url(../mediapro/aguafon.jpg);
+  background-size: cover;
+  background-position:center;
   height: 100%;
   color: #121212 ;
   font-size: 1.2rem;
@@ -130,16 +132,7 @@ p{
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-.banner {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-image: url("../mediapro/bearlake (1).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 .contact_info{
   margin: 0 auto;
 }

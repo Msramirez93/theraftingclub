@@ -11,7 +11,9 @@
 body {
   font-family: "Merriweather", serif;
   background-color: #161B33;
-  background-image: url(../mediapro/fondodelsitiogeneral.jpg);
+  background-image: url(../mediapro/fondo3.jpg);
+  background-size: cover;
+  background-position: center;
   height: 100%;
   color: #121212;
   font-size: 1.2rem;
@@ -110,17 +112,6 @@ p {
   transform: rotateX(-90deg);
 }
 
-.banner {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-image: url("../mediapro/bearlake (1).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .contact_info {
   margin: 0 auto;
 }
@@ -191,12 +182,6 @@ a {
 
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -341,7 +326,7 @@ a {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -380,12 +365,15 @@ a {
 .home-headline-1 {
   padding: 20px 20px;
   text-align: center;
-  margin-top: 2em;
+  margin: 2em 0;
+  background-color: #ffffff52;
 }
 
 .home-pragraph-3 {
   font-size: 1.5rem;
-  margin: 30px 50px;
+  margin: 30px;
+  background-color: #ffffff52;
+  padding: 10px;
 }
 
 .home-paragraph-1 {
@@ -407,6 +395,23 @@ a {
 .contai-grid {
   display: grid;
   grid-template-areas: "home-paragraph-1" "home-right-img" "home-left-img" "home-paragraph-2";
+}
+
+.bananas {
+  display: flex;
+  justify-content: center;
+}
+
+.home-left-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+}
+
+.home-right-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
 }
 
 .home-left-img:hover {
@@ -437,12 +442,6 @@ iframe {
 
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -587,7 +586,7 @@ iframe {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -627,6 +626,8 @@ iframe {
   align-items: center;
   justify-content: center;
   margin: auto;
+  background-color: #ffffff52;
+  border-radius: 30px;
 }
 
 .storm1 {
@@ -675,12 +676,6 @@ form label.first input {
 
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -825,7 +820,7 @@ form label.first input {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -889,12 +884,6 @@ form label.first input {
 
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -1039,7 +1028,7 @@ form label.first input {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -1135,12 +1124,6 @@ img {
 /*FAQ*/
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -1285,7 +1268,7 @@ img {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -1408,7 +1391,7 @@ img {
   }
 
   form fieldset {
-    margin: 10px 11px 5px 148px;
+    margin: auto;
     border: 2px solid transparent;
     padding: 1rem 1.5%;
     background-color: transparent;
@@ -1445,12 +1428,6 @@ img {
 }
 @media only screen and (max-width: 759px) {
   /*home*/
-  .bananas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .home-left-img .home-right-img {
     width: auto;
   }
@@ -1524,5 +1501,11 @@ img {
 .btn-12 span:nth-child(1),
 .btn-12 span:nth-child(2) {
     margin: 10px 140px;
+  }
+
+  .formulario {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
